@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplon</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -19,24 +20,37 @@
             <li><a href="#reservation">Espaces</a></li>
             <li><a href="#reservation">Entités</a></li>
         </ul>
+        <div class="actions">
+            <div class="search">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+            <div class="language">
+                <span>Fr</span>
+                <ul>
+                    <li><a href="#">En</a></li>
+                    <li><a href="#">Fr</a></li>
+                </ul>
+            </div>
+        </div>
 
         
         <div class="toggle_menu"><button>Contact</button></div>
     </header>
 
-    <section>
+    <section id="histor">
         <div class="histo">
             <h1>La petite histoire</h1>
         </div>
-        <div  class="container">
+        <div class="flex">
             <div class="banner">
-                <div class="text">L’ouverture de la Fabrique</div>
-                <div class="year">2017</div>
-            </div>>
+                <p>L'ouverture de la fabrique <br> <span>2017</span></p>
+                <!-- <div class="text">L’ouverture de la Fabrique</div>
+                <div class="year">2017</div> -->
+            </div>
             <div class="quote-container">
                 <div class="background"></div>
                 <div class="quote">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores laboriosam deleniti, culpa perspiciatis nemo quos illum? Inventore non totam ea, optio voluptates eveniet in sequi quasi dolorem molestiae saepe eaque, enim laudantium corrupti iure quisquam a amet reprehenderit atque fugiat?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Maiores laboriosam deleniti, culpa perspiciatis <br> nemo quos illum? Inventore non totam ea, optio voluptates <br> eveniet in sequi quasi dolorem molestiae saepe eaque, <br> enim laudantium corrupti iure quisquam <br> a amet reprehenderit atque fugiat?</p>
                 </div>
             </div>
         </div>
@@ -119,6 +133,7 @@
         <div class="sous">
             <h1>Nos valeurs</h1>
         </div>
+        
         <div  class="valeur">
             <div class="nos-valeur">
                 <h1>Respect</h1>
@@ -127,6 +142,7 @@
                 <button>voir plus</button>
             </div>
             <div class="sidebar">
+                <div class="element"></div>
                 <div class="sidebar-item selected">
                     <div class="circle">01</div>
                     <div class="text">
@@ -194,19 +210,33 @@
             <h2>Ngoor SECK</h2>
             <h3>Formateur</h3>
             <p>Fermentum massa justo sit <br>amet risus morbi leo.</p>
-            
+            <div class="icones">
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-linkedin-square'></i>
+            </div>
         </div>
         <div class="dish">
             <img src="c2.png">
             <h2>Samba Kanne</h2>
             <h3>Coach</h3>
             <p>Fermentum massa justo sit <br>amet risus morbi leo.</p>
+            <div class="icones">
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-linkedin-square'></i>
+                </div>
         </div>
         <div class="dish">
             <img src="c3.png">
             <h2>Seckou Sané</h2>
             <h3>Formateur</h3>
             <p>Fermentum massa justo sit <br>amet risus morbi leo.</p>
+            <div class="icones">
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-linkedin-square'></i>
+            </div>
          </div>
       
     </div>
@@ -298,49 +328,47 @@
 <!-- footer -->
 
 <footer>
-   
-    <div class="partie1">
-        <div class="logo">
-            <img src="simplon.png" alt="logo">
+    <div class="container">
+        <div class="footer-section logo-social">
+            <img src="simplon.png" alt="Simplon Sénégal">
+            <div class="social-icons">
+                <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-youtube' ></i>
+            </div>
         </div>
-        
+        <div class="footer-section links">
+            <h4>Voir plus</h4>
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Notre histoire</a></li>
+                <li><a href="#">Condition d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h4>Coordonnées</h4>
+            <p>Cité keur Goor Gi<br>Dakar, Sicap, Liberté 2<br>Sénégal</p>
+            <p>Email: <a href="mailto:simplon@email.com">simplon@email.com</a><br>
+            <a href="mailto:help@simplon.com">help@simplon.com</a></p>
+            <p>Téléphone:<br>(221) 77 456 78 90<br>(221) 77 654 32 10</p>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Notre Newsletter</h4>
+            <p>Souscrivez-vous à notre newsletter pour ne manquer aucune de nos activités</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Joindre</button>
+            </form>
+        </div>
     </div>
-    <div class="partie2">
-        <h1>Voir plus</h1>
-        <h2>A propos</h2>
-        <h2>Notre histoire</h2>
-        <h2>Condition d'utilisation</h2>
-        <h2>Politique de confidentialité</h2>
-        <h2>FAQ</h2>
-       
+    <div class="footer-bottom">
+        <p>&copy; 2021 Simplon. All rights reserved.</p>
+        <p>Made with <span class="heart">&hearts;</span> by SimplonP4</p>
     </div>
-    <div class="partie3">
-        <h1>Coordonnées</h1>
-        <p>Cité keur Goor Gi <br>
-            Dakar, Sicap, Libeté 2 <br>
-            Senegal</p>
-
-        <h2>simplon@email.com</h2>
-         <h2>help@simplon.com  </h2>
-        <h2>(221) 77 456 78 90</h2> 
-        <h2> (221) 77 654 32 10</h2>  
-        
-
-    </div>
-    <div class="partie4">
-        <h1>Notre Newsletter</h1>
-        <p>Souscrivez-vous à notre <br>
-            newsletter pour ne manquer <br>
-            aucune de nos activités</p>
-        
-        
-    </div>
-    
 </footer>
-<div class="terminal">
-    <h2>© 2021 Simplon. All rights reserved.</h2>
-    <h4>Made with by SimplonP4 </h4>
-</div>
 
 </body>
 </html>
